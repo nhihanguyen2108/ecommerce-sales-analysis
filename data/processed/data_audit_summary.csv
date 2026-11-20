@@ -1,0 +1,13 @@
+﻿Metric,Value
+Total Rows,541909
+Total Columns,8
+Missing CustomerID,135080
+Missing Description,1454
+Exact Duplicate Rows,5268
+Cancelled Rows,9288
+Cancelled Invoices,3836
+Negative Quantity,10624
+Zero Quantity,0
+Negative UnitPrice,2
+Zero UnitPrice,2515
+Invalid InvoiceDate,0

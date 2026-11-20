@@ -1,0 +1,31 @@
+# Environments, caches and local configuration
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.env
+.env.*
+.vscode/
+.idea/
+.codex/
+.agents/
+.aws/
+# Large transaction extracts: regenerate using the notebooks
+data/raw/*
+!data/raw/README.md
+data/processed/sales_clean.csv
+data/processed/sales_sql_import.csv
+# Temporary artifacts and backups
+tmp/
+dist/
+~$*
+*.tmp
+*.bak
+*.log
+.DS_Store
+Thumbs.db
+# Power BI local caches
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+*.pbix.autosave

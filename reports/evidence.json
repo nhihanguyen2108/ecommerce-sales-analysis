@@ -1,0 +1,116 @@
+{
+  "basis": "Saved cleaned transaction CSV; values recalculated locally, no live SQL or Power BI filter certification",
+  "source": "data/processed/sales_clean.csv",
+  "source_sha256": "a2ffec4ef9738199e8004ff89661cca54125242937e9047205a0b21ae4df5b31",
+  "period_start": "2010-12-01 08:26:00",
+  "period_end": "2011-12-09 12:50:00",
+  "rows": 530104,
+  "gross_sales_gbp": 10666684.544,
+  "orders": 19960,
+  "identified_customers": 4338,
+  "units_sold": 5588376,
+  "aov_gbp": 534.403033266533,
+  "countries": [
+    {
+      "Country": "United Kingdom",
+      "GrossSales": 9025222.08,
+      "Orders": 18019,
+      "Customers": 3920,
+      "UnitsSold": 4662390,
+      "AOV": 500.87,
+      "RevenueSharePct": 84.6113152289357
+    },
+    {
+      "Country": "Germany",
+      "GrossSales": 228867.14,
+      "Orders": 457,
+      "Customers": 94,
+      "UnitsSold": 119261,
+      "AOV": 500.8,
+      "RevenueSharePct": 2.14562584143109
+    },
+    {
+      "Country": "Netherlands",
+      "GrossSales": 285446.34,
+      "Orders": 94,
+      "Customers": 9,
+      "UnitsSold": 200361,
+      "AOV": 3036.66,
+      "RevenueSharePct": 2.6760549524319
+    },
+    {
+      "Country": "EIRE",
+      "GrossSales": 283453.96,
+      "Orders": 288,
+      "Customers": 3,
+      "UnitsSold": 147173,
+      "AOV": 984.22,
+      "RevenueSharePct": 2.6573764212371183
+    }
+  ],
+  "november_revenue_gbp": 1509496.33,
+  "november_mom_pct": 30.694665263697797,
+  "november_returning_share_pct": 80.5889423076923,
+  "identified_gross_sales_gbp": 8911407.904,
+  "top10_customers_gross_sales_gbp": 1538276.6500000001,
+  "top10_customers_share_identified_pct": 17.261881248972173,
+  "top10_customers_share_all_pct": 14.421319423618648,
+  "missing_customer_rows": 132220,
+  "missing_customer_gross_sales_gbp": 1755276.6400000001,
+  "exact_duplicate_rows": 5226,
+  "duplicate_revenue_sensitivity_gbp": 24573.74,
+  "product_only_gross_sales_gbp": 10304223.624,
+  "checks_passed": [
+    "Canonical KPI totals",
+    "Positive quantities and prices",
+    "Valid invoice identifiers and dates",
+    "Revenue = Quantity × UnitPrice",
+    "YearMonth matches InvoiceDate",
+    "monthly_sales.csv: values reconcile",
+    "country_sales.csv: values reconcile",
+    "customer_sales.csv: revenues and orders reconcile",
+    "top_10_products.csv: ranking and revenue reconcile",
+    "monthly_growth.csv: percentages reconcile",
+    "Monthly customer activity: new + returning = active; first appearances reconcile",
+    "Raw workbook: canonical size, eligible rows and revenue; two large sale/reversal pairs"
+  ],
+  "large_sales_and_reversals": [
+    {
+      "InvoiceNo": "541431",
+      "StockCode": "23166",
+      "CustomerID": 12346.0,
+      "InvoiceDate": "2011-01-18T10:01:00.000",
+      "Quantity": 74215,
+      "UnitPrice": 1.04,
+      "ValueGBP": 77183.6
+    },
+    {
+      "InvoiceNo": "C541433",
+      "StockCode": "23166",
+      "CustomerID": 12346.0,
+      "InvoiceDate": "2011-01-18T10:17:00.000",
+      "Quantity": -74215,
+      "UnitPrice": 1.04,
+      "ValueGBP": -77183.6
+    },
+    {
+      "InvoiceNo": "581483",
+      "StockCode": "23843",
+      "CustomerID": 16446.0,
+      "InvoiceDate": "2011-12-09T09:15:00.000",
+      "Quantity": 80995,
+      "UnitPrice": 2.08,
+      "ValueGBP": 168469.6
+    },
+    {
+      "InvoiceNo": "C581484",
+      "StockCode": "23843",
+      "CustomerID": 16446.0,
+      "InvoiceDate": "2011-12-09T09:27:00.000",
+      "Quantity": -80995,
+      "UnitPrice": 2.08,
+      "ValueGBP": -168469.6
+    }
+  ],
+  "raw_sha256": "43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d"
+}
